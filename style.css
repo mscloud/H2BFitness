@@ -1,0 +1,329 @@
+/*---CSS Reset---*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, 
+content {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---CSS Style---*/
+body {
+	line-height: 1.8em;
+	font-size: 1.2em;
+	font-family:sans-serif;
+	color: #3d3536;
+	background-color: white;
+}
+body, html{
+	height: 100%;
+}
+a{
+	color: #b4d7a8;
+	text-decoration: none;
+}
+header {
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	background: white;
+	z-index: 2;
+	box-shadow: 0px 8px 6px -6px black;
+	z-index: 2;
+}
+header h1{
+	font-weight: bold;
+	float: left;
+	margin-left: 5%;
+	margin-top: 15px;
+	color: green;
+}
+header a{
+	color: green;
+}
+header a:hover {
+	color: green;
+	text-decoration: none;
+}
+nav{
+	float: right;
+	margin-right: 5%;
+	width: 44px;
+	width: auto;
+	z-index: 3;
+}
+nav ul{
+	position: static;
+	line-height: 70px;
+}
+nav li{
+	margin-left: 1em;
+}
+nav a{
+	height: auto;
+	line-height: normal;
+	background: white;
+	padding: .6em 1em;
+	color: #3d3536;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: transparent;
+}
+nav ul li{
+	float:left;
+}
+nav ul li:hover{
+	position:relative;
+	
+}
+nav ul li ul{
+	display:none;
+}
+nav ul li:hover ul{
+	display:block;
+	background-color: white;
+	position:absolute;
+	margin-top: 20px;
+	left:-7px;
+	top:35px;
+	width: 112px;
+}
+nav ul li ul li{
+	display:block;
+	float:none;
+	margin-left:5px;
+	margin-top:10px;
+}
+nav ul li ul li a{
+	width:112px;
+}
+.content{
+	height: 100%;
+	position: relative;
+}
+.image{
+	position: relative;
+	z-index: 1;
+}
+.text{
+	width: 90%;
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 4em 0; 
+	z-index: 2;
+}
+.text p{
+	margin-bottom: 30px;
+}
+.text blockquote{
+	padding: 1em;
+	margin: 1em;
+}
+.text a{
+	color: black;
+}
+.item{
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid green;
+	padding-top: 60px;
+	margin-top: -60px;
+}
+.container{
+	padding: 4em 0; 
+}
+table a:hover{
+	color: green;
+	text-decoration: none;
+}
+.today{
+	border-bottom: 3px green solid !important;
+}
+a.class{
+	display: block;
+	padding: 4px 6px;
+	color: grey;
+}
+.class_1{
+	border-left: 2px solid blue;
+	background-color: #e6effb;
+}
+.class_2{
+	border-left: 2px solid green;
+	background-color: #e7fbec;
+}
+.class_3{
+	border-left: 2px solid orange;
+	background-color: #fcecd5;
+}
+.class_4{
+	border-left: 2px solid #ff0000;
+	background-color: #ffcccc;
+}
+.class_5{
+	border-left: 2px solid purple;
+	background-color: #e6d5fc;
+}
+.box {
+	border-radius:3px;
+	margin-bottom: 50px;
+}
+.box-head {
+	text-align:center;
+}
+.box-head h3 {
+	color:green;
+	padding:26px 0;
+	font-weight:bold;
+
+	border-bottom:solid 1px green;
+}
+label {
+  display:block;
+  margin-top:.5em;
+  letter-spacing:2px;
+}
+input,textarea{
+  display: block;
+  width: 200px;
+}
+.textarea{
+	width: 100%;
+}
+input, textarea, select{
+  background:#efefef;
+  border:1px solid #dedede;
+  padding:.5em;
+	border-radius: 2px;
+	
+}
+.submit {
+	cursor: pointer;
+
+}
+.buttonlink{
+  border-radius: 2px;
+  color: green;
+  background-color: #dedede;
+  padding: 6px 20px;
+  margin-right: 3px;
+  text-align: center;
+  text-decoration:none;
+	cursor: pointer;
+}
+.buttonlink:hover {
+	background-color: green;
+  cursor: pointer;
+	color: white;
+	text-decoration: none;
+  }
+	
+#addmember{
+  padding: 6px 30px;
+}
+footer a:hover{
+	border-top-color: green;
+	color: green;
+	text-decoration: none;
+}
+footer{
+	font-size: .80em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+}
+footer a{
+	border-top: 1px solid silver;
+	float: right;
+	margin-right: 5%;
+	color: silver;
+}
+@media screen and (max-width: 820px){
+	#menu{
+		margin-top:15px;
+		padding-right:50px;
+		width:2em;
+		display: block;
+		background:white;
+		font-size:2em;
+		float: right;
+	}
+	#nav.js{
+		float: right;
+		margin-top:22px;
+		display: none;
+	}
+	nav ul{
+		width:50%;
+		text-align:center;
+		float:right;
+	}
+	nav li{
+		width:100%;
+		border-right:none;
+		background-color: white;
+	}
+}
+@media screen and (min-width: 820px) {
+	#menu{
+		display: none;
+	}
+}
+.admin_{
+	padding: 10em;
+	text-align: center;
+}
+.admin_ form{
+	margin-right:auto;
+	margin-left:auto;
+	text-align:centre;
+	display: inline block;
+	text-align: center;
+}
+.admin_ form input{
+	margin-right:auto;
+	margin-left:auto;
+}
